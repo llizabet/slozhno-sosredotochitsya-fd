@@ -6,9 +6,9 @@
 
 body {
   min-inline-size: 375px;
-  max-inline-size: 100%; 
+  max-inline-size: 100%;
   margin: 0;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 h1,
@@ -41,7 +41,6 @@ a {
   border: none;
   background-color: transparent;
   text-transform: lowercase;
-  border: 1px solid transparent;
 }
 
 button:hover {
@@ -52,10 +51,9 @@ button:hover {
 button:focus-visible {
   border-bottom: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
   outline: none;
-} 
+}
 
 figure {
   margin: 0;
   padding: 0;
 }
-
