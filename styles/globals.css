@@ -1,5 +1,3 @@
-/* Глобальные стили для проекта, их можно дополнять и менять по желанию */
-
 *,
 *::before,
 *::after {
@@ -8,8 +6,9 @@
 
 body {
   min-inline-size: 375px;
-  max-inline-size: 1440px;
-  margin: 0 auto;
+  max-inline-size: 100%; 
+  margin: 0;
+  overflow-x: hidden; 
 }
 
 h1,
@@ -35,8 +34,28 @@ picture {
 
 button,
 a {
-  color: currentColor;
-  font-family: inherit;
-  font-size: inherit;
+  color: var(--title-decor-el, rgba(255, 0, 112, 1));
+  font-family: var(--font-family), sans-serif;
+  font-size: 18px;
   line-height: inherit;
+  border: none;
+  background-color: transparent;
+  text-transform: lowercase;
+  border: 1px solid transparent;
 }
+
+button:hover {
+  outline: 1px solid var(--button-hover, rgba(255, 0, 112, 0.4));
+  padding-inline: 13px;
+}
+
+button:focus-visible {
+  border-bottom: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
+  outline: none;
+} 
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
