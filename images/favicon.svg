@@ -1,4 +1,9 @@
 <svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+<style>
+  @media (prefers-color-scheme: dark) {
+      :root {
+        fill: white;
+    </style>
 <path d="M81 0V28H28L28 81H0V0H81Z" fill="#FF0070"/>
 <path d="M256 81V0H175V28L228 28V81H256Z" fill="#FF0070"/>
 <path d="M175 256H256V175H228L228 228L175 228V256Z" fill="#FF0070"/>
