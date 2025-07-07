@@ -3,8 +3,10 @@
   min-width: 375px;
   max-width: 1440px;
   margin: 0 auto;
-  background-image: var(--background-image, url(../images/cover-image-dark.png));
-  background-position: top center;
+  background-image: var(
+    --background-image,
+    url(../images/cover-image-dark.png)
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -14,7 +16,6 @@
 .header {
   height: 100vh;
   min-height: 668px;
-  
 }
 
 .decorated-zone {
@@ -33,7 +34,7 @@
   width: 100%;
 }
 
- .decorated-zone::before {
+.decorated-zone::before {
   content: "";
   display: inline-block;
   position: absolute;
@@ -55,8 +56,7 @@
   border-bottom: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
   left: 10px;
   bottom: 10px;
-
-} 
+}
 
 .decorated-line {
   display: flex;
@@ -78,7 +78,7 @@
 .decoration-text::after {
   content: "";
   display: inline-block;
-  
+
   inline-size: 9px;
   block-size: 9px;
   border-radius: 50%;
@@ -108,9 +108,9 @@
   padding-inline: 13px;
 }
 
- .header__theme-menu-button_active {
+.header__theme-menu-button_active {
   outline: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
-} 
+}
 
 .title-text {
   font-family: var(--font-family), sans-serif;
@@ -127,7 +127,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  margin-top: 55px ;
+  margin-top: 55px;
   margin-bottom: 56px;
   width: 100%;
   color: var(--title-decor-text, rgba(0, 0, 40, 1));
@@ -235,41 +235,18 @@ main {
   outline: 1px solid var(--text-color, rgba(241, 178, 206, 1));
 }
 
-/* .footer {
-  margin-top: clamp(
-    35px,
-    calc(35px + (60 - 35) * (100vw - 375px) / (768 - 375)),
-    60px
-  );
-  position: relative;
-  height: clamp(668px, 100vh, 1024px);
-} */
-
-/* .footer .footer-text {
-  display: grid;
-  box-sizing: border-box;
+.footer {
+  display: flex;
   align-items: center;
   justify-content: center;
-} */
-
-.footer {
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
   height: 100vh;
   width: 100%;
   min-height: 668px;
   position: relative;
   margin-top: 40px;
-  /* padding-top: clamp(
-    35px,
-    calc(35px + (60 - 35) * (100vw - 375px) / (768 - 375)),
-    60px
-  ); */
 }
 
 .footer-text {
-  
   font-family: var(--font-family), sans-serif;
   font-weight: 700;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -277,46 +254,6 @@ main {
   text-shadow: 2px 2px var(--accent-color, rgba(255, 0, 112, 1));
   line-height: 83%;
 }
-
-  /* .footer .decorated-zone::before {
-  content: "";
-  position: absolute;
-  width: 25.04px;
-  height: 25px;
-  border-right: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
-  border-top: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
-  right: clamp(
-    10px,
-    calc(10px + (20 - 10) * (100vw - 375px) / (768 - 375)),
-    20px
-  );
-  top: clamp(
-    10px,
-    calc(10px + (20 - 10) * (100vw - 375px) / (768 - 375)),
-    20px
-  );
-  margin: 0;
-}
-
-.footer .decorated-zone::after {
-  content: "";
-  position: absolute;
-  width: 25.04px;
-  height: 25px;
-  border-left: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
-  border-bottom: 1px solid var(--title-decor-el, rgba(255, 0, 112, 1));
-  left: clamp(
-    10px,
-    calc(10px + (20 - 10) * (100vw - 375px) / (768 - 375)),
-    20px
-  );
-  bottom: clamp(
-    10px,
-    calc(10px + (20 - 10) * (100vw - 375px) / (768 - 375)),
-    20px
-  );
-}   */
-
 
 @media (width>= 768px) or (width>= 1024px) {
   .title-text {
@@ -330,9 +267,7 @@ main {
   }
 
   .text-block {
-    
     grid-template-columns: 1fr 2fr;
-    
   }
 
   .title-block {
@@ -350,7 +285,7 @@ main {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 24% 30% 40%;
-    gap: 20px; 
+    gap: 20px;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
@@ -364,9 +299,8 @@ main {
   }
 
   .gallery-image {
-    
     height: 100%;
-    
+
     display: block;
   }
 
@@ -395,9 +329,9 @@ main {
     grid-row: 3;
   }
 
-   .footer {
+  .footer {
     margin-top: 60px;
-  } 
+  }
 
   .footer-text {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
@@ -433,9 +367,7 @@ main {
   }
 
   .text-block-what {
-    
     grid-template-columns: repeat(3, 1fr);
-    
   }
 
   .article-description-what {
@@ -453,8 +385,6 @@ main {
   .footer {
     min-height: 1024px;
   }
-
-  
 }
 
 @media (width>= 1024px) {
@@ -464,7 +394,6 @@ main {
 
   .title-description {
     margin: 114px 0;
-   
   }
 
   .text-block-what {
@@ -517,5 +446,4 @@ main {
     min-height: 768px;
     height: 100%;
   }
-
 }
